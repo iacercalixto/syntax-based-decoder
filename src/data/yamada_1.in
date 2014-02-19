@@ -1,0 +1,40 @@
+# the line below contains a description of the graph.
+problem_description=Description of the graph
+
+# the next line contains the name of the tree's root non-terminal node,
+# namely the node from where all the others derive.
+root_nonterminal=VB
+
+# the lines below contain non-terminal nodes names.
+# non-terminal node names are given one by line.
+# the root node must also be declared here.
+nonterminal=VB
+nonterminal=PRP
+nonterminal=VB2
+nonterminal=VB1
+nonterminal=TO
+nonterminal=VB
+
+# more non-terminals.
+nonterminal=NN
+nonterminal=TO
+
+# the lines below contain terminal nodes names, or our vocabulary.
+# the vocabulary is case-insensitive.
+# the declaration of terminals must be given one by line also.
+terminal=He
+terminal=adores
+terminal=listening
+terminal=to
+terminal=music
+
+# now we describe the tree's edges.
+# we call them production rules.
+# the production rules must also be given one by line.
+production_rules=(VB,PRP)
+production_rules=(VB,VB2)
+production_rules=(VB,VB1)
+production_rules=(VB2,TO)
+production_rules=(VB2,VB)
+production_rules=(TO,NN)
+production_rules=(TO,TO)
